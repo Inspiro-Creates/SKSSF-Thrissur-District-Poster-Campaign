@@ -106,7 +106,7 @@ function draw() {
   var ctx = canvas.getContext("2d");
   ctx.font = " 28px Roboto";
   ctx.textAlign = "center";
-  ctx.fillStyle = '#000000';
+  ctx.fillStyle = 'white';
 
   // Draw slice
   ctx.drawImage(
