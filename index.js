@@ -22,8 +22,8 @@ function getImage() {
   newImg.id = "myGreatImage";
   // uploadedImageDiv.style.border = "4px solid #FCB514";
   // uploadedImageDiv.innerHTML
-  uploadedImageDiv.style.width = "300px";
-  uploadedImageDiv.style.height = "350px";
+  uploadedImageDiv.style.width = "345px";
+  uploadedImageDiv.style.height = "370px";
   uploadedImageDiv.appendChild(newImg);
   myGreatImage = document.getElementById("myGreatImage");
 
@@ -57,7 +57,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  719/529,  
+    aspectRatio:  345/370,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -111,10 +111,10 @@ function draw() {
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-    196,
-    367,
-    719,
-    529
+    656,
+    272,
+    345,
+    370
     // 900,
     // 0,
     // 1500,
@@ -123,7 +123,7 @@ function draw() {
 
   // Draw frame
   ctx.drawImage(document.getElementById("frame"), 0, 0);
-  ctx.fillText(document.getElementById("username").value, 650, 900);
+  ctx.fillText(document.getElementById("username").value, 829, 703);
 }
 
 // downlad function
@@ -135,7 +135,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "ജൂൺ 5 പരിസ്ഥിതി ദിനം SKSSF ത്വലബ സ്റ്റേറ്റ് കമ്മിറ്റി.jpg");
+  download.setAttribute("download", "Poster.jpg");
 }
 
 // download button disaplay
